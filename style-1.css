@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: rgb(109, 3, 136);
+    background-color: #340303;
+}
+main {
+    padding: 40px 0 ;
+    max-width: 1200px;
+    margin: 0;
+}
+label{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: chocolate;
+}
+.inputs{
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid  rgb(1, 102, 32);
+    border-radius: 4px ;
+    font-size: 16px;
+    transition: border-color 10s ease;
+
+}
+.inputs:focus{
+    outline: none;
+    border-color: violet;
+    box-shadow: 0 0 5px #8cff00;
+}
+button{
+    padding: 12px 24px;
+    background-color: rgb(6, 209, 3);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: rgb(186, 221, 10);
+}
+footer{
+    background-color: rgb(57, 1, 1);
+    border-top: 2px solid rgb(1, 102, 32);
+}
+@media(max-width:768px){
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    main{
+        padding: 100px 15px 15px;
+
+    }
+    section{
+        padding: 20px;
+        margin: 20px 0;
+    }
+    h1{
+        font-size: 2rem;
+
+    }
+    .temas-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media(max-width:480){
+    main{
+        padding: 120px 10px 10px;
+
+    }
+    section {
+        padding: 15px;
+
+    }
+    form{
+        max-width: 100%;
+    }
+}
+.text-glow {
+    color:#ff2f00;
+    text-shadow: 0 0 5px rgb(28, 76, 234),0 0 10px rgb(213, 11, 193), 0 0 20px rgb(185, 4, 17) rgb(255, 72, 0);
+    transition: text-shadow 0.4s ease, color 0.4s ease;
+
+}
+.text-glow:hover{
+    color: bisque;
+    text-shadow: 0 0 10px crimson, 0 0 20px rebeccapurple, 0 0 40px whitesmoke;
+}
+.text-typing {
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 3px solid #ff2f00;
+    overflow: hidden;
+    animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+}
+@keyframes typing{
+    form {
+        width: 0; }
+    to{
+        width: 100%; }
+}
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
+}
+.text-gradient{
+    background: linear-gradient(90deg, red, rgb(10, 2, 232), #ff7002);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 1s infinite linear;
+
+}
+@keyframes gradientMove{
+    from { background-position: 0%;}
+    to { background-position: 200%;}
+}
+.text-shine{
+    position: relative;
+    overflow: hidden;
+    color: #0b0334;
+}
+.text-shine::after {
+    content: ('');
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(3, 105, 89, 0.7), transparent);
+    transition: all 0.9s;
+}
+.text-shine:hover::after{
+    left: 100%;
+}
+.text-pop{
+    transition: all 0.3 ease;
+}
+.text-pop:hover{
+    transform: scale(1.1);
+    color: #0b0334;
+    text-shadow:  0 3px 8px rgba(3, 105, 89, 0.7);
+}
+.text-expand{
+    letter-spacing: ;
+}
