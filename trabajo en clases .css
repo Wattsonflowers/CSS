@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    top: 40px;
+
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+    background-color: #7e04a6;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:  rgb(112, 120, 234);
+    padding: 15px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgb(7, 74, 44);
+    padding: 100px;
+    
+    width: 400px;
+    height: 600px;
+    
+    
+}
+main {
+    padding: 40px 0 ;
+    max-width: 1200px;
+    margin: 0;
+}
+button{
+    color: #ffffff;
+    padding: 2px;
+    background-color: #600180;
+}
+h1{
+    color: #660387;
+}
+h2{
+    color: #0e05c2;
+}
+
+
+
+
