@@ -12,3 +12,16 @@ imputs{
     display: flex;
     flex-direction: column;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'arial', sans-serif
+    line-height: 1.6;
+    color: #c51111ff;
+    background-color: #f4f4f4
+
+}
